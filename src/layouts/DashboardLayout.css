@@ -1,0 +1,51 @@
+/* src/layouts/DashboardLayout.css */
+.sidebar {
+  background-color: #343a40;
+  color: white;
+  width: 250px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar .sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #212529;
+}
+
+.sidebar .toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.sidebar .nav-item {
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 6px;
+}
+
+.sidebar .nav-item:hover {
+  background-color: #495057;
+  text-decoration: none;
+}
+
+.sidebar.collapsed .nav-item span {
+  display: none;
+}
+
+.dashboard-content {
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #f8f9fa;
+}

@@ -1,0 +1,25 @@
+/* src/styles.css */
+html,
+body,
+#root,
+.full-height {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.dashboard-content {
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
